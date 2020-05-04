@@ -8,14 +8,14 @@ import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 public class ThymeleafConfig {
 
     @Bean
-    public ClassLoaderTemplateResolver templateResolver(){
-        ClassLoaderTemplateResolver emailTemplateResolver=new ClassLoaderTemplateResolver();
-        emailTemplateResolver.setPrefix("templates/");
-        emailTemplateResolver.setTemplateMode("HTML5");
-        emailTemplateResolver.setSuffix(".html");
-        emailTemplateResolver.setTemplateMode("XHTML");
-        emailTemplateResolver.setCharacterEncoding("UTF-8");
-        emailTemplateResolver.setOrder(1);
-        return emailTemplateResolver;
+    public ClassLoaderTemplateResolver templateResolver() {
+        ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
+        templateResolver.setPrefix("templates/");
+        templateResolver.setTemplateMode("HTML5");
+        templateResolver.setSuffix(".html");
+        templateResolver.setTemplateMode("XHTML");
+        templateResolver.setCharacterEncoding("UTF-8");
+        templateResolver.setOrder(1);
+        return templateResolver;
     }
 }
